@@ -1,8 +1,28 @@
 # 🛒 Zepto E-commerce SQL Data Analyst Portfolio Project
 
 ## 📌 Project Overview
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=8A2BE2&center=true&vCenter=true&width=1000&lines=Zepto+E-Commerce+SQL+Data+Analytics+Project;PostgreSQL+%7C+SQL+%7C+EDA+%7C+Data+Cleaning;Business+Insights+from+Real-World+Inventory+Data" alt="Typing SVG" />
+</p>
 
-This project demonstrates my SQL and data analytics skills through the analysis of a real-world e-commerce inventory dataset from Zepto, one of India's leading quick-commerce platforms.
+<h1 align="center">🛒 Zepto E-Commerce SQL Data Analyst Portfolio Project</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-Analytics-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Data%20Cleaning-Project-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/EDA-Business%20Insights-orange?style=for-the-badge"/>
+</p>
+
+<p align="center">
+📊 Real-World SQL Portfolio Project | 🚀 Data Analyst Portfolio | 📈 Business Intelligence
+</p>
+
+---
+
+# 📌 Project Overview
+
+This project demonstrates my SQL and Data Analytics skills through the analysis of a real-world e-commerce inventory dataset from Zepto, one of India's leading quick-commerce platforms.
 
 The project simulates the responsibilities of a Data Analyst by performing:
 
@@ -16,7 +36,7 @@ This project helped me strengthen my understanding of SQL, PostgreSQL, data clea
 
 ---
 
-## 🎯 Objectives
+# 🎯 Objectives
 
 Using SQL, I analyzed Zepto's inventory data to:
 
@@ -24,54 +44,94 @@ Using SQL, I analyzed Zepto's inventory data to:
 * Identify pricing inconsistencies and discount patterns
 * Clean and transform raw business data
 * Generate actionable business insights
-* Practice real-world analytical workflows used in e-commerce companies
+* Practice real-world analytical workflows
 
 ---
 
-## 🛠️ Technologies Used
+# 🔄 Project Workflow
+
+```mermaid
+flowchart LR
+    A[Raw CSV Dataset] --> B[PostgreSQL Database]
+    B --> C[Data Cleaning]
+    C --> D[Exploratory Data Analysis]
+    D --> E[Business Insights]
+    E --> F[Decision Making]
+```
+
+---
+
+# 🛠️ Technologies Used
 
 * PostgreSQL
 * pgAdmin
 * SQL
 * CSV Data Processing
-* Data Cleaning & Transformation
-* Exploratory Data Analysis (EDA)
+* Data Cleaning
+* Exploratory Data Analysis
+* Git & GitHub
 
 ---
 
-## 📂 Dataset Information
+# 📂 Dataset Information
 
-The dataset contains product inventory information collected from Zepto's product catalog.
+The dataset contains product inventory information collected from Zepto's catalog.
 
-### Key Columns
+## Key Columns
 
-* sku_id – Unique product identifier
-* name – Product name
-* category – Product category
-* mrp – Maximum Retail Price (₹)
-* discountpercent – Discount percentage
-* discountedsellingprice – Final selling price (₹)
-* availablequantity – Available inventory units
-* weightingms – Product weight
-* outofstock – Stock availability flag
-* quantity – Package quantity
+| Column                 | Description               |
+| ---------------------- | ------------------------- |
+| sku_id                 | Unique product identifier |
+| name                   | Product name              |
+| category               | Product category          |
+| mrp                    | Maximum Retail Price (₹)  |
+| discountpercent        | Discount percentage       |
+| discountedsellingprice | Final Selling Price (₹)   |
+| availablequantity      | Available Inventory Units |
+| weightingms            | Product Weight            |
+| outofstock             | Stock Availability Flag   |
+| quantity               | Package Quantity          |
 
 ---
 
-## 🔍 Exploratory Data Analysis
+# 🏗️ Database Schema
+
+```sql
+CREATE TABLE zepto (
+    sku_id SERIAL PRIMARY KEY,
+    category VARCHAR(120),
+    name VARCHAR(150) NOT NULL,
+    mrp NUMERIC(8,2),
+    discountPercent NUMERIC(5,2),
+    availableQuantity INTEGER,
+    discountedSellingPrice NUMERIC(8,2),
+    weightInGms INTEGER,
+    outOfStock BOOLEAN,
+    quantity INTEGER
+);
+```
+
+---
+
+# 🔍 Exploratory Data Analysis
 
 Performed the following analyses:
 
-* Total products available in inventory
-* Distinct product categories
-* In-stock vs out-of-stock products
-* Duplicate product listings across multiple SKUs
-* Null value identification
-* Product distribution across categories
+✅ Total products available in inventory
+
+✅ Distinct product categories
+
+✅ In-stock vs out-of-stock products
+
+✅ Duplicate product listings across multiple SKUs
+
+✅ Null value identification
+
+✅ Product distribution across categories
 
 ---
 
-## 🧹 Data Cleaning
+# 🧹 Data Cleaning
 
 Implemented several data quality improvements:
 
@@ -83,33 +143,33 @@ Implemented several data quality improvements:
 
 ---
 
-## 📊 Business Insights Generated
+# 📊 Business Insights Generated
 
-### 1. Top Discounted Products
+## 1. Top Discounted Products
 
 Identified products offering the highest discounts.
 
-### 2. Out-of-Stock Premium Products
+## 2. Out-of-Stock Premium Products
 
 Found expensive products currently unavailable.
 
-### 3. Revenue Opportunity Analysis
+## 3. Revenue Opportunity Analysis
 
 Estimated potential revenue by category.
 
-### 4. Low Discount Premium Products
+## 4. Low Discount Premium Products
 
 Highlighted high-value products receiving minimal discounts.
 
-### 5. Category Discount Ranking
+## 5. Category Discount Ranking
 
 Ranked categories by average discount percentage.
 
-### 6. Price-per-Gram Analysis
+## 6. Price-per-Gram Analysis
 
 Determined the best value-for-money products.
 
-### 7. Product Weight Segmentation
+## 7. Product Weight Segmentation
 
 Classified products into:
 
@@ -117,36 +177,119 @@ Classified products into:
 * Medium Weight
 * Bulk Weight
 
-### 8. Inventory Weight Analysis
+## 8. Inventory Weight Analysis
 
 Calculated total inventory weight across categories.
 
 ---
 
-## 📈 Key Skills Demonstrated
+# 📈 Sample SQL Queries
 
-* SQL Query Writing
-* Joins & Aggregations
-* Data Cleaning
-* Business Analytics
-* PostgreSQL
-* Data Exploration
-* Inventory Analysis
-* Reporting & Insight Generation
+## Top 10 Highest Discounted Products
+
+```sql
+SELECT name,
+       mrp,
+       discountPercent
+FROM zepto
+ORDER BY discountPercent DESC
+LIMIT 10;
+```
+
+## Category-wise Revenue Potential
+
+```sql
+SELECT category,
+       SUM(discountedSellingPrice * availableQuantity) AS potential_revenue
+FROM zepto
+GROUP BY category
+ORDER BY potential_revenue DESC;
+```
+
+## Premium Products Out of Stock
+
+```sql
+SELECT name,
+       mrp
+FROM zepto
+WHERE outOfStock = TRUE
+ORDER BY mrp DESC;
+```
 
 ---
 
-## 🚀 Project Outcomes
+# 📈 Key Skills Demonstrated
+
+* SQL Query Writing
+* PostgreSQL
+* Data Cleaning
+* Data Validation
+* Aggregations & Grouping
+* Business Analytics
+* Inventory Analysis
+* Reporting & Insight Generation
+* Problem Solving
+
+---
+
+# 🚧 Challenges Faced
+
+### Numeric Field Overflow Error
+
+While importing the dataset into PostgreSQL, the following error occurred:
+
+```text
+ERROR: numeric field overflow
+A field with precision 5, scale 2 must round to an absolute value less than 10^3
+```
+
+### Solution
+
+Updated numeric column precision:
+
+```sql
+discountedSellingPrice NUMERIC(8,2)
+```
+
+### UTF-8 Encoding Issue
+
+Resolved CSV import errors by saving the dataset in UTF-8 CSV format before loading into PostgreSQL.
+
+---
+
+# 🚀 Project Outcomes
 
 Through this project, I gained practical experience in solving real-world business problems using SQL and developed a stronger understanding of how data analysts support decision-making in e-commerce organizations.
 
 ---
 
-## 👨‍💻 About Me
+# 📸 Project Screenshots
 
-**Vivek Goyal**
+Add screenshots here:
 
-B.Tech Computer Science Engineering (2026)
+* Database Schema
+* Data Import
+* SQL Queries
+* Query Results
+* Insights Dashboard
+
+Example:
+
+```markdown
+![Database Schema](screenshots/schema.png)
+
+![SQL Query](screenshots/query1.png)
+
+![Results](screenshots/results.png)
+```
+
+---
+
+# 👨‍💻 About Me
+
+## Vivek Goyal
+
+🎓 B.Tech Computer Science Engineering (2026)
 
 Interested in:
 
@@ -157,11 +300,17 @@ Interested in:
 
 Currently building hands-on projects to strengthen my analytical and problem-solving skills while preparing for Data Analyst and Business Analyst roles.
 
-### Connect With Me
+---
+
+# 📫 Connect With Me
 
 * GitHub: https://github.com/goyalvivek1500
 * Email: [vivekgoyal1500@gmail.com](mailto:vivekgoyal1500@gmail.com)
 
 ---
 
-⭐ If you found this project interesting, feel free to explore my other projects and connect with me.
+# ⭐ Support
+
+If you found this project helpful, consider giving it a star ⭐ on GitHub.
+
+It motivates me to build and share more data analytics projects.

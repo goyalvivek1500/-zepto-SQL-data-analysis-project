@@ -1,5 +1,3 @@
-# 🛒 Zepto E-commerce SQL Data Analyst Portfolio Project
-
 ## 📌 Project Overview
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=8A2BE2&center=true&vCenter=true&width=1000&lines=Zepto+E-Commerce+SQL+Data+Analytics+Project;PostgreSQL+%7C+SQL+%7C+EDA+%7C+Data+Cleaning;Business+Insights+from+Real-World+Inventory+Data" alt="Typing SVG" />
@@ -260,28 +258,6 @@ Resolved CSV import errors by saving the dataset in UTF-8 CSV format before load
 # 🚀 Project Outcomes
 
 Through this project, I gained practical experience in solving real-world business problems using SQL and developed a stronger understanding of how data analysts support decision-making in e-commerce organizations.
-
----
-
-# 📸 Project Screenshots
-
-Add screenshots here:
-
-* Database Schema
-* Data Import
-* SQL Queries
-* Query Results
-* Insights Dashboard
-
-Example:
-
-```markdown
-![Database Schema](screenshots/schema.png)
-
-![SQL Query](screenshots/query1.png)
-
-![Results](screenshots/results.png)
-```
 
 ---
 

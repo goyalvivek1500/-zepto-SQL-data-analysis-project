@@ -290,3 +290,18 @@ Currently building hands-on projects to strengthen my analytical and problem-sol
 If you found this project helpful, consider giving it a star ⭐ on GitHub.
 
 It motivates me to build and share more data analytics projects.
+
+🤖 Machine Learning Extension
+
+Built a Linear Regression model using Python, Pandas and Scikit-learn to predict product inventory availability.
+
+Features Used:
+- MRP
+- Discount Percentage
+- Discounted Selling Price
+- Quantity
+- Product Weight
+
+Model Evaluation:
+- R² Score: 0.0088
+- MAE: 1.91
